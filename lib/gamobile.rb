@@ -1,0 +1,3 @@
+module Gamobile
+  # Your code goes here...
+end
