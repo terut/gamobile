@@ -1,7 +1,7 @@
 # coding: utf-8
 module Gamobile
   module Generators
-    class GamobileGenerator < Rails::Generators::NamedBase
+    class InstallGenerator < Rails::Generators::NamedBase
       source_root File.expand_path('../templates', __FILE__)
       argument :tracker_code, :type => :string, :default => 'xx-xxxxxxx-xx'
 
