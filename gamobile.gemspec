@@ -6,11 +6,11 @@ Gem::Specification.new do |s|
   s.name        = "gamobile"
   s.version     = Gamobile::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["terut"]
+  s.email       = ["terut.dev+github@gmail.com"]
+  s.homepage    = "http://www.terut.net/"
+  s.summary     = %q{Google Analytics for japanese mobile with rails}
+  s.description = %q{Google Analytics for japanese mobile. This gem rewrite ga.php for rails and require jpmobile.}
 
   s.rubyforge_project = "gamobile"
 
