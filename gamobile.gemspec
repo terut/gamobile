@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
  
   s.licenses = ['MIT']
 
+  s.add_dependency 'rails', ['>= 3.0.7']
   s.add_dependency 'jpmobile', ['>= 0.1.6']
   s.add_development_dependency 'bundler', ['>= 1.0.10']
   s.add_development_dependency 'rspec', ['>= 0']

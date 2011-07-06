@@ -1,7 +1,7 @@
 # coding: utf-8
 require 'net/http'
 Net::HTTP.version_1_2
-class <%= gamobile_class %>Controller < ApplicationController
+class <%= class_name %>Controller < ApplicationController
 
   # Trackerのバージョン
   G_VERSION = '4.4sh'

@@ -1,5 +1,5 @@
 # coding: utf-8
-module <%= gamobile_class %>Helper
+module <%= class_name %>Helper
   # mobile用のanalyticsタグ
   def ga_url
     return mobile_ga_path(
