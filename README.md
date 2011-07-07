@@ -48,3 +48,10 @@ def ga_url
 end
 ```
 
+Add img tag in your views.
+
+``` ruby
+# app/views/mobile/hoge.html.erb
+
+<img src="<%= ga_url %> width="1" height="1" />
+```
