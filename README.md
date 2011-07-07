@@ -1,6 +1,6 @@
 gamobile
 ========
-gamobile is Google Analytics for mobile with rails 3.
+gamobile is Google Analytics for japanese mobile with rails 3.
 This gem rewrite ga.php to rails with jpmobile.
 So, require rails 3 and jpmobile.
 
