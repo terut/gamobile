@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["terut"]
   s.email       = ["terut.dev+github@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/terut/gamobile"
   s.summary     = %q{Google Analytics for japanese mobile with rails3}
   s.description = %q{Google Analytics for japanese mobile. This gem rewrite ga.php for rails3 and require jpmobile.}
 
