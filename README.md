@@ -51,7 +51,7 @@ end
 Add img tag in your views.
 
 ``` ruby
-# app/views/mobile/hoge.html.erb
+# app/views/mobile/foo.html.erb
 
-<img src="<%= ga_url %> width="1" height="1" />
+<img src="<%= ga_url %>" width="1" height="1" />
 ```
