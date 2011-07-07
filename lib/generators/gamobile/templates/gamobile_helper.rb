@@ -11,7 +11,7 @@ module <%= class_name %>Helper
     }
     # TODO Rewrite url adapted to your routes.rb
     # Example:
-    #   return ga_url(options)
+    #   return mobile_ga_path(options)
     return "#"
   end
 end
