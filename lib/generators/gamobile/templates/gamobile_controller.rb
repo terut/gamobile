@@ -100,7 +100,7 @@ class <%= class_name %>Controller < ApplicationController
 
   # trans_sidを削除する
   def delete_trans_sid(str)
-    if session_key.blank?
+    if !self.class.private_method_defined?(:session_key) || session_key.blank?
       return str.to_s
     else
       return str.to_s.gsub(/#{session_key}=[^&]*&?/, '')
