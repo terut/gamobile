@@ -66,11 +66,11 @@ class <%= class_name %>Controller < ApplicationController
                 :utmac => account,
                 :utmcc => "__utma%3D999.999.999.999.999.1%3B",
                 :utmvid => visitor_id,
-                :utmip => ip_add(request.remote_addr) } 
+                :utmip => ip_add(request.remote_addr.to_s) } 
      
     uri = "#{utm_gif_location}?#{queries.to_query}"
     ext_headers = { "User-Agent" => user_agent,
-                    "Accepts-Language" => request.accept_language }
+                    "Accepts-Language" => request.accept_language.to_s }
     request_to_ga(uri, ext_headers)
 
     headers["X-GA-MOBILE-URL"] = uri unless params[:utmdebug].blank?
@@ -93,7 +93,9 @@ class <%= class_name %>Controller < ApplicationController
       end
     rescue Timeout::Error, StandardError =>e
       logger.debug "-----Send Request To Google Analytics-----"
-      logger.debug uri.to_s
+      logger.debug "ErrorMsg:#{e}"
+      logger.debug "uri:#{uri}"
+      logger.debug "opt:#{opt}"
       logger.debug "------------------------------------------"
     end
   end
